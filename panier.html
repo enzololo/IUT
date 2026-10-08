@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier — Matcha Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a href="index.html" class="site-header__logo">Matcha Lab</a>
+            <nav class="site-header__nav">
+                <a href="index.html" class="site-header__link">Accueil</a>
+                <a href="login.html" class="site-header__link">Connexion</a>
+                <a href="panier.html" class="site-header__link site-header__link--active">Panier</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ====== CONTENU PRINCIPAL ====== -->
+    <main>
+
+        <!-- Section panier : tableau des articles + total -->
+        <section class="cart">
+            <h1 class="cart__title">Votre Panier</h1>
+
+            <!-- Tableau épuré des produits dans le panier -->
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th class="cart-table__header">Produit</th>
+                        <th class="cart-table__header">Prix unitaire</th>
+                        <th class="cart-table__header">Quantité</th>
+                        <th class="cart-table__header">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Ligne 1 : Matcha Cérémonial -->
+                    <tr class="cart-table__row">
+                        <td class="cart-table__cell">
+                            <img src="images/matcha-ceremonial.jpg" alt="Matcha cérémonial" class="cart-table__product-image">
+                            <strong class="cart-table__product-name">Matcha Cérémonial</strong>
+                        </td>
+                        <td class="cart-table__cell">28,00 €</td>
+                        <td class="cart-table__cell">1</td>
+                        <td class="cart-table__cell cart-table__total">28,00 €</td>
+                    </tr>
+
+                    <!-- Ligne 2 : Fouet Chasen -->
+                    <tr class="cart-table__row">
+                        <td class="cart-table__cell">
+                            <img src="images/chasen.jpg" alt="Fouet Chasen" class="cart-table__product-image">
+                            <strong class="cart-table__product-name">Fouet Chasen</strong>
+                        </td>
+                        <td class="cart-table__cell">12,00 €</td>
+                        <td class="cart-table__cell">2</td>
+                        <td class="cart-table__cell cart-table__total">24,00 €</td>
+                    </tr>
+
+                    <!-- Ligne 3 : Bol Chawan -->
+                    <tr class="cart-table__row">
+                        <td class="cart-table__cell">
+                            <img src="images/chawan.jpg" alt="Bol Chawan" class="cart-table__product-image">
+                            <strong class="cart-table__product-name">Bol Chawan</strong>
+                        </td>
+                        <td class="cart-table__cell">35,00 €</td>
+                        <td class="cart-table__cell">1</td>
+                        <td class="cart-table__cell cart-table__total">35,00 €</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td class="cart-table__foot-cell" colspan="3">Total</td>
+                        <td class="cart-table__foot-total">87,00 €</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <!-- Bouton valider et lien continuer les achats -->
+            <div class="cart-actions">
+                <button class="cart-actions__button" onclick="window.location.href='login.html'">Valider la commande</button>
+                <a href="index.html" class="cart-actions__link">Continuer mes achats</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ====== PIED DE PAGE ====== -->
+    <footer class="site-footer">
+        <p class="site-footer__text">&copy; 2026 Matcha Lab</p>
+    </footer>
+
+</body>
+</html>

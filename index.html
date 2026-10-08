@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matcha Lab — Le matcha, simplement.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ====== EN-TÊTE : logo + navigation ====== -->
+    <header class="site-header">
+        <div class="site-header__inner">
+            <!-- Logo texte -->
+            <a href="index.html" class="site-header__logo">Matcha Lab</a>
+
+            <!-- Menu de navigation identique sur toutes les pages -->
+            <nav class="site-header__nav">
+                <a href="index.html" class="site-header__link site-header__link--active">Accueil</a>
+                <a href="login.html" class="site-header__link">Connexion</a>
+                <a href="panier.html" class="site-header__link">Panier</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ====== CONTENU PRINCIPAL ====== -->
+    <main>
+
+        <!-- Bannière héro : titre accrocheur + slogan -->
+        <section class="hero">
+            <h1 class="hero__title">Le matcha, simplement.</h1>
+            <p class="hero__subtitle">
+                Des feuilles sélectionnées, un savoir-faire ancestral, un moment de pure sérénité.
+            </p>
+            <a href="#produits" class="hero__button">Découvrir nos produits</a>
+        </section>
+
+        <!-- Section produits : 4 cartes avec image, nom, prix, bouton -->
+        <section id="produits" class="products">
+            <h2 class="products__title">Nos Produits</h2>
+            <div class="products__grid">
+
+                <!-- Produit 1 : Matcha Cérémonial -->
+                <article class="product-card">
+                    <img src="images/matcha-ceremonial.jpg" alt="Matcha cérémonial premium en poudre fine" class="product-card__image">
+                    <h3 class="product-card__name">Matcha Cérémonial</h3>
+                    <p class="product-card__price">28,00 €</p>
+                    <a href="panier.html" class="product-card__button">Ajouter au panier</a>
+                </article>
+
+                <!-- Produit 2 : Matcha Culinaire -->
+                <article class="product-card">
+                    <img src="images/matcha-culinaire.jpg" alt="Matcha culinaire pour recettes et pâtisseries" class="product-card__image">
+                    <h3 class="product-card__name">Matcha Culinaire</h3>
+                    <p class="product-card__price">15,00 €</p>
+                    <a href="panier.html" class="product-card__button">Ajouter au panier</a>
+                </article>
+
+                <!-- Produit 3 : Fouet Chasen -->
+                <article class="product-card">
+                    <img src="images/chasen.jpg" alt="Fouet bambou traditionnel chasen" class="product-card__image">
+                    <h3 class="product-card__name">Fouet Chasen</h3>
+                    <p class="product-card__price">12,00 €</p>
+                    <a href="panier.html" class="product-card__button">Ajouter au panier</a>
+                </article>
+
+                <!-- Produit 4 : Bol Chawan -->
+                <article class="product-card">
+                    <img src="images/chawan.jpg" alt="Bol traditionnel en céramique chawan" class="product-card__image">
+                    <h3 class="product-card__name">Bol Chawan</h3>
+                    <p class="product-card__price">35,00 €</p>
+                    <a href="panier.html" class="product-card__button">Ajouter au panier</a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Section À propos -->
+        <section class="about">
+            <h2 class="about__title">À propos</h2>
+            <p class="about__text">
+                Matcha Lab est né d'une passion pour le thé vert japonais.
+                Nous sélectionnons nos feuilles directement au Japon, dans les vergers
+                de Uji et de Nishio, et les livrons en France en conservant toute
+                leur fraîcheur. Notre mission : rendre le matcha accessible,
+                authentique et simple à savourer au quotidien.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- ====== PIED DE PAGE ====== -->
+    <footer class="site-footer">
+        <p class="site-footer__text">&copy; 2026 Matcha Lab </p>
+    </footer>
+
+</body>
+</html>
