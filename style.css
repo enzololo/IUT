@@ -476,9 +476,12 @@ body {
         align-items: center;
     }
 
-    .product-card {
+    .product-card__image {
         width: 100%;
-        max-width: 340px;
+        height: auto;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        background-color: #f0f0f2;
     }
 
     /* Titres réduits */
@@ -507,6 +510,10 @@ body {
     .cart-table__product-image {
         width: 44px;
         height: 44px;
+    }
+    
+    .cart-table {
+        border-collapse: separate;
     }
 
     .cart-table__foot-total {
